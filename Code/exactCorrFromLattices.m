@@ -59,6 +59,7 @@ for k=1:num_matrices
 end
 %G2 = G2/num_matrices;
 matrix_struct;
+% path to save the correlation matrices file
 path = "C:\Users\Aviv\PycharmProjects\CLWS2";
 save_path = strcat(path,"/corrMatrices_first.mat");
 %save(save_path,'G2');

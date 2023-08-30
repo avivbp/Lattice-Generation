@@ -5,14 +5,6 @@ import glob
 import multiprocessing
 
 
-# Define a custom sorting key function
-# def get_sort_key(file_path):
-#     filename = os.path.basename(file_path)
-#     print(filename)
-#     xxxx_part = int(filename.split('_')[0].split('snapshot')[1].split('-')[1][0:-4])  # Extract the snapshot number
-#     yyyy_part = filename.split('_')[1].split('.')[0]  # extract seed number
-#     return int(xxxx_part), int(yyyy_part)  # Convert to integers for sorting
-
 def get_sort_key(file_path):
     filename = os.path.basename(file_path)
     # print(filename)

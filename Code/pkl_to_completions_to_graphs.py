@@ -37,7 +37,7 @@ def main():
     parser.add_argument('-i', '--image', help='Original images for completion directory', required=True)
     parser.add_argument('-m', '--mask', help='Mask path', required=True)
     parser.add_argument('-o', '--output', help='Output directory', required=True)
-    parser.add_argument('-d', '--done', help='True or Flase, wether complition of al checkpoints is needed or not', required=True)
+    parser.add_argument('-d', '--done', help='True or Flase, whether complition of al checkpoints is needed or not', required=True)
     parser.add_argument('-t', '--truncation', help='Truncation psi for the trade-off between quality and diversity. Defaults to 1.', default=1)
 
     args = parser.parse_args()

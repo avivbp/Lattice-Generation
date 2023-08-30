@@ -1,3 +1,4 @@
+% path to stored lattice vectors file for which you want to calculate exact correlation matrices
 path = "C:\Users\Aviv\PycharmProjects\CLWS2\lattice_vectors_first.mat";
 vectors = load(path).lattice_vectors;
 matrix_struct = struct();

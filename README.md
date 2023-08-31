@@ -5,7 +5,10 @@ In this repository you will find all pieces of code used to create our results.
 
 The following is an explanation for how to reproduce the results we show in our report:
 
-1) Training Co-Mod-GAN:
+1) For StyleGAN2 training and generating new images, see https://github.com/NVlabs/stylegan2. We ran the code on the 
+   university cluster, using the commands in StyleGAN_Docker.txt. This opens a container with the required dependencies for 
+   running the code.
+2) Training Co-Mod-GAN:
    In order to train Co-Mod-GAN, we used Google Cloud. In there we created a notebook (type in searchbar vertex ai-> go to workbench on side 
    tab and click on new notebook, setup notebook according to your requirements. In a terminal run the commands shown in docker.txt, this will 
    enter a container with all required dependencies for running Co-Mod-GAN code, and run the training code which creates snapshots of your 

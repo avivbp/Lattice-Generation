@@ -23,7 +23,7 @@ The following is an explanation for how to reproduce the results we show in our 
    b. run exactCorrFromLattices.m using the lattice_vectors.m file. you should change the input path according to your hierarchy and change the 
       output path however you like. This will create a file called corrMatrices.m.
    
-   c. In order to use the corrMatrices.mat file, use the extract_numpyArr_from_MATLABArr.py python code and provide it the path in which corrMatrices.mat is at.
+   c. In order to use the correlation matrices found in the corrMatrices.mat file, use the extract_numpyArr_from_MATLABArr.py python code and provide it the path of corrMatrices.mat.
    
 5) Image Completion Using FCNN:
 6) 

@@ -15,6 +15,7 @@ The following is an explanation for how to reproduce the results we show in our 
    network in the from of.pkl files.
    
 3) Image Completion Using Co-Mod-GAN:
+   Firstly you need to change the run_generator.py file 
    In order to complete images using our code, you need to run completion_loop.py after changing the images_path, output_dir_path and 
    checkpoint_path according to your hierarchy.
    If you want to get a KL divergence score for your image completions, you should do the following:
@@ -26,3 +27,12 @@ The following is an explanation for how to reproduce the results we show in our 
    c. In order to use the correlation matrices found in the corrMatrices.mat file, use the extract_numpyArr_from_MATLABArr.py python code and provide it the path of corrMatrices.mat.
    
 5) Image Completion Using FCNN:
+   To generate an energy vector, run
+python FindLattice.py <matrix.npy>
+Where matrix.npy is a numpy array containing one 10x10 matrix (check example_correlation.npy for an example).
+To denoise an input matrix, run
+python DenoiseMatrix.py <matrix.npy>
+Where matrix.npy is similar to our description above.
+To train a new model based on our architecture, use EncoderClass.py as the model class.
+Encoder.pth and Denoiser.pth are our best trained models for finding energy vectors and denoising matrices. Check our report for more elaboration on their training process. They can be used directly to predict the correct vector using PyTorch.
+

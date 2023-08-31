@@ -18,3 +18,4 @@ The following is an explanation for how to reproduce the results we show in our 
    
 3) Image Completion Using FCNN:
 4) 
+5) 

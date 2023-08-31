@@ -15,7 +15,7 @@ The following is an explanation for how to reproduce the results we show in our 
    network in the from of.pkl files.
    
 3) Image Completion Using Co-Mod-GAN:
-   Firstly you need to change the run_generator.py file 
+   Firstly you need to change the run_generator.py file taken from Co-Mod-GAN to the run_generator.py file in this repository.
    In order to complete images using our code, you need to run completion_loop.py after changing the images_path, output_dir_path and 
    checkpoint_path according to your hierarchy.
    If you want to get a KL divergence score for your image completions, you should do the following:

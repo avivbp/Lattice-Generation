@@ -19,10 +19,12 @@ The following is an explanation for how to reproduce the results we show in our 
    checkpoint_path according to your hierarchy.
    If you want to get a KL divergence score for your image completions, you should do the following:
    a. run latticeEnergies.py. This will create a lattice_vectors.m file.
+   
    b. run exactCorrFromLattices.m using the lattice_vectors.m file. you should change the input path according to your hierarchy and change the 
       output path however you like. This will create a file called corrMatrices.m.
+   
    c. run Images_to_KL. This will create a graph of the KL divergence of your image completions as a function of snapshot kimg.
    
-4) Image Completion Using FCNN:
-5) 
+5) Image Completion Using FCNN:
 6) 
+7) 

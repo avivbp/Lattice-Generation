@@ -27,7 +27,6 @@ The following is an explanation for how to reproduce the results we show in our 
    c. In order to use the correlation matrices found in the corrMatrices.mat file, use the extract_numpyArr_from_MATLABArr.py python code and provide it the path of corrMatrices.mat.
    
 5) Image Completion Using FCNN:
-   
    To generate an energy vector, run
 python FindLattice.py <matrix.npy>
 Where matrix.npy is a numpy array containing one 10x10 matrix (check example_correlation.npy for an example).

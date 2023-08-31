@@ -5,9 +5,13 @@ In this repository you will find all pieces of code used to create our results.
 
 The following is an explanation for how to reproduce the results we show in our report:
 
-1) Training Co-Mod-GAN
+1) Training Co-Mod-GAN:
+   In order to train Co-Mod-GAN, we used Google Cloud. In there we created a notebook (type in searchbar vertex ai-> go to workbench on side 
+   tab and click on new notebook, setup notebook according to your requirements. In a terminal run the commands shown in docker.txt, this will 
+   enter a container with all required dependencies for running Co-Mod-GAN code, and run the training code which creates snapshots of your 
+   network in the from of.pkl files.
    
-2) Image Completion Using Co-Mod-GAN:
+3) Image Completion Using Co-Mod-GAN:
    In order to complete images using our code, you need to run completion_loop.py after changing the images_path, output_dir_path and 
    checkpoint_path according to your hierarchy.
    If you want to get a KL divergence score for your image completions, you should do the following:
@@ -16,6 +20,6 @@ The following is an explanation for how to reproduce the results we show in our 
       output path however you like. This will create a file called corrMatrices.m.
    c. run Images_to_KL. This will create a graph of the KL divergence of your image completions as a function of snapshot kimg.
    
-3) Image Completion Using FCNN:
-4) 
+4) Image Completion Using FCNN:
 5) 
+6) 

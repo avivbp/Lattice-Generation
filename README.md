@@ -10,7 +10,7 @@ The following is an explanation for how to reproduce the results we show in our 
    running the code.
 2) Training Co-Mod-GAN:
    In order to train Co-Mod-GAN, we used Google Cloud. In there we created a notebook (type in searchbar vertex ai-> go to workbench on side 
-   tab and click on new notebook, setup notebook according to your requirements. In a terminal run the commands shown in docker.txt, this will 
+   tab and click on new notebook, setup notebook according to your requirements. In a terminal run the commands shown in Co_Mod_Docker.txt, this will 
    enter a container with all required dependencies for running Co-Mod-GAN code, and run the training code which creates snapshots of your 
    network in the from of.pkl files.
    

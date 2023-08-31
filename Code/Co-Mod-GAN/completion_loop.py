@@ -26,7 +26,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-c', '--checkpoint', help='Network checkpoints directory', required=True)
     parser.add_argument('-i', '--image', help='Original images for completion directory', required=True)
-    parser.add_argument('-m', '--mask', help='Mask path', required=True)
+    parser.add_argument('-m', '--mask', help='Mask path. Must be a .jpg file', required=True)
     parser.add_argument('-o', '--output', help='Output directory', required=True)
     parser.add_argument('-t', '--truncation', help='Truncation psi for the trade-off between quality and diversity. Defaults to 1.', default=1)
 

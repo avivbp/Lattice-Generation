@@ -15,6 +15,8 @@ The following is an explanation for how to reproduce the results we show in our 
    network in the from of.pkl files.
    
 3) Image Completion Using Co-Mod-GAN:
+   
+   The directories in Datasets contain physically correct example you can use for image completion purposes.
    Firstly you need to change the run_generator.py file taken from Co-Mod-GAN to the run_generator.py file in this repository.
    In order to complete images using our code, you need to run completion_loop.py after changing the images_path, output_dir_path and 
    checkpoint_path according to your hierarchy.
@@ -35,4 +37,3 @@ python DenoiseMatrix.py <matrix.npy>
 Where matrix.npy is similar to our description above.
 To train a new model based on our architecture, use EncoderClass.py as the model class.
 Encoder.pth and Denoiser.pth are our best trained models for finding energy vectors and denoising matrices. Check our report for more elaboration on their training process. They can be used directly to predict the correct vector using PyTorch.
-

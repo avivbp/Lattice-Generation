@@ -1,0 +1,13 @@
+#!bash
+docker run -v ~:/home -it --gpus all --rm tensorflow/tensorflow:1.14.0-gpu-py3
+
+pip install --user --upgrade pip
+pip install --user scipy==1.3.3
+pip install --user requests==2.22.0
+pip install --user Pillow==6.2.1
+pip install --user tqdm
+pip install --user sklearn
+pip install --user scikit-learn
+pip install --user matplotlib
+
+python run_training.py --data-dir=datasets --dataset=miri --metrics=fid50k --total-kimg 50000 --num-gpus=1 --resume ./network-snapshot-001034.pkl
